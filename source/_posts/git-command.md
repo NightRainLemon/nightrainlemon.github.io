@@ -1,17 +1,11 @@
 ---
 title: git 命令
-date: 2022-11-07
-updated: mysql
-type:
-comments:
-description:
-keywords:
-top_img:
-mathjax:
-katex:
-aside:
-aplayer:
-highlight_shrink:
+categories: git
+comments: true
+highlight_shrink: false
+abbrlink: fa409c5e
+date: 2022-11-08 00:00:00
+updated:
 ---
 
 ## git 命令

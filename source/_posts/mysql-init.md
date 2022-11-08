@@ -1,17 +1,11 @@
 ---
 title: mysql 8.0.31 安装配置全过程
-date: 2022-11-07
-updated: mysql
-type:
-comments:
-description:
-keywords:
-top_img:
-mathjax:
-katex:
-aside:
-aplayer:
-highlight_shrink:
+categories: mysql
+comments: true
+highlight_shrink: false
+abbrlink: fe9d3ff6
+date: 2022-11-07 00:00:00
+updated:
 ---
 
 ## mysql 8.0.31 安装配置全过程

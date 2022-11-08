@@ -26,7 +26,7 @@ updated:
 mysqld --initialize --console
 ```
 记住当前的密码（MqGsepr&S0&e）！
-![init](/images/mysql-init/init.png)
+![init](/images/mysql-安装配置/init.png)
 
 
 #### 2.3 安装 mysql 服务
@@ -34,9 +34,9 @@ mysqld --initialize --console
 ```cmd
 mysqld -install
 ```
-![installServer](/images/mysql-init/installServer.png)
+![installServer](/images/mysql-安装配置/installServer.png)
 可以看到已经有了 mysql 服务了。
-![mysqlServer](/images/mysql-init/mysqlServer.png)
+![mysqlServer](/images/mysql-安装配置/mysqlServer.png)
 
 #### 2.4 启动和关闭服务
 启动和关闭服务一种是在 Windows 服务中手动开启和关闭，另一种是用命令来启动和关闭。
@@ -44,7 +44,7 @@ mysqld -install
 net stop mysql
 net start mysql
 ```
-![startService](/images/mysql-init/startService.png)
+![startService](/images/mysql-安装配置/startService.png)
 
 #### 3.5 修改密码
 输入
@@ -54,4 +54,4 @@ mysql -u root -p
 alter user 'root'@'localhost' identified by '密码';
 commit;
 ```
-![alterPassword](/images/mysql-init/alterPassword.png)
+![alterPassword](/images/mysql-安装配置/alterPassword.png)

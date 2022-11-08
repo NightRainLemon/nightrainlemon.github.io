@@ -4,9 +4,9 @@
 
 # Site
 title: 想要逆袭の柠檬
-subtitle: '🍋'
-description: '你能不能动起来！'
-keywords: blog
+subtitle: '你们都是可爱的人呐'
+description: '不必在意, 勇往直前'
+keywords: '夜雨柠檬, 柠檬, 柠檬🍋, yylemon, nightrainlemon, 夜雨柠檬的博客, 柠檬的博客, 博客'
 author: 柠檬🍋
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -102,10 +102,10 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/NightRainLemon/NightRainLemon.github.io
-  branch: gh-pages
-
+  - type: git
+    repo: https://github.com/NightRainLemon/NightRainLemon.github.io
+    branch: gh-pages
+  - type: baidu_url_submitter # 这是新加的百度主动推送
 
 # hexo-filter-gitcalendar
 # see https://akilar.top/posts/1f9c68c9/
@@ -118,21 +118,6 @@ gitcalendar:
     type: id
     name: recent-posts
     index: 0
-  # volantis挂载容器
-  # layout:
-  #   type: class
-  #   name: l_main
-  #   index: 0
-  # matery挂载容器
-  # layout:
-  #   type: id
-  #   name: indexCard
-  #   index: 0
-  # mengd挂载容器
-  # layout:
-  #   type: class
-  #   name: content
-  #   index: 0
   user: NightRainLemon #git用户名
   apiurl: 'https://python-github-calendar-api.yylemon.top'
   minheight:
@@ -142,16 +127,89 @@ gitcalendar:
   color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
   # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
   # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
+  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
 
+# 文章链接转数字或字母：https://github.com/rozbo/hexo-abbrlink
 abbrlink:
-  alg: crc32  #support crc16(default) and crc32
-  rep: hex    #support dec(default) and hex
-  drafts: false #(true)Process draft,(false)Do not process draft
-  # Generate categories from directory-tree
-  # depth: the max_depth of directory-tree you want to generate, should > 0
-  auto_category:
-    enable: true
-    depth:
+  alg: crc16   #算法： crc16(default) and crc32
+  rep: hex     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
+
+# 本地搜索：https://github.com/wzpan/hexo-generator-search
+search:
+  path: search.xml
+  field: all
+  content: true
+
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false
+
+# 追番插件
+# https://github.com/HCLonely/hexo-bilibili-bangumi
+bangumi: # 追番设置
+  enable: true
+  path:
+  vmid: 302224089
+  title: '追番列表'
+  quote: '生命不息，追番不止！'
+  show: 1
+  lazyload: false
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
+  extra_options:
+    key: value
+cinema: # 追剧设置
+  enable: false
+  path:
+  vmid: 302224089
+  title: '追剧列表'
+  quote: '生命不息，追剧不止！'
+  show: 1
+  lazyload: true
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
+  extra_options:
+    key: value
+
+# https://github.com/hexojs/hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+# https://github.com/coneycode/hexo-generator-baidu-sitemap
+baidusitemap:
+  path: baidusitemap.xml
+
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+rss: /atom.xml
+
+# Extensions
+plugins:
+  - hexo-generator-feed
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-sitemap
+
+# 百度主动推送
+# https://github.com/huiwang/hexo-baidu-url-submit
+baidu_url_submit:
+  count: 1        # 提交最新的多少个链接
+  host: https://blog.yylemon.top  # 在百度站长平台中添加的域名
+  token: 0eKg2mnPPixxh8ey   # 秘钥
+  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里

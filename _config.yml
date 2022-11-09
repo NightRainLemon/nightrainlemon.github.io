@@ -1,7 +1,3 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
 title: 想要逆袭の柠檬
 subtitle: '你们都是可爱的人呐'
@@ -12,12 +8,11 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blog.yylemon.top
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: true
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
@@ -31,12 +26,11 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: false
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true # Apply to the whole site
   exclude: ''
 filename_case: 0
 render_drafts: false
@@ -57,9 +51,6 @@ prismjs:
   tab_replace: ''
 
 # Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
   per_page: 10
@@ -71,36 +62,27 @@ category_map:
 tag_map:
 
 # Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
 # Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
 # Pagination
-## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
 
 # Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
 include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+# Theme
 theme: butterfly
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
     repo: https://github.com/NightRainLemon/NightRainLemon.github.io
@@ -108,49 +90,41 @@ deploy:
   - type: baidu_url_submitter # 这是新加的百度主动推送
 
 # hexo-filter-gitcalendar
-# see https://akilar.top/posts/1f9c68c9/
 gitcalendar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  # butterfly挂载容器
-  layout: # 挂载容器类型
+  enable: true
+  priority: 5
+  enable_page: /
+  layout:
     type: id
     name: recent-posts
     index: 0
-  user: NightRainLemon #git用户名
+  user: NightRainLemon
   apiurl: 'https://python-github-calendar-api.yylemon.top'
   minheight:
-    pc: 280px #桌面端最小高度
-    mibile: 0px #移动端最小高度
-  # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
-  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
-  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
-  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
+    pc: 280px
+    mibile: 0px
+  color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']"
+  container: .recent-post-item(style='width:100%;height:auto;padding:10px;')
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
 
-# 文章链接转数字或字母：https://github.com/rozbo/hexo-abbrlink
+# 文章链接转数字或字母
 abbrlink:
-  alg: crc16   #算法： crc16(default) and crc32
-  rep: hex     #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
+  alg: crc16
+  rep: hex
 
-# 本地搜索：https://github.com/wzpan/hexo-generator-search
+# 本地搜索
 search:
   path: search.xml
   field: all
   content: true
 
 # APlayer
-# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
 aplayer:
   meting: true
   asset_inject: false
 
 # 追番插件
-# https://github.com/HCLonely/hexo-bilibili-bangumi
 bangumi: # 追番设置
   enable: true
   path:
@@ -182,18 +156,18 @@ cinema: # 追剧设置
   extra_options:
     key: value
 
-# https://github.com/hexojs/hexo-generator-sitemap
+# sitemap
 sitemap:
   path: sitemap.xml
   rel: false
   tags: true
   categories: true
 
-# https://github.com/coneycode/hexo-generator-baidu-sitemap
+# baidu-sitemap
 baidusitemap:
   path: baidusitemap.xml
 
-#Feed Atom
+# Feed Atom
 feed:
   type: atom
   path: atom.xml
@@ -207,9 +181,8 @@ plugins:
   - hexo-generator-sitemap
 
 # 百度主动推送
-# https://github.com/huiwang/hexo-baidu-url-submit
 baidu_url_submit:
-  count: 1        # 提交最新的多少个链接
-  host: https://blog.yylemon.top  # 在百度站长平台中添加的域名
-  token: 0eKg2mnPPixxh8ey   # 秘钥
-  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
+  count: 1
+  host: https://blog.yylemon.top
+  token: 0eKg2mnPPixxh8ey
+  path: baidu_urls.txt

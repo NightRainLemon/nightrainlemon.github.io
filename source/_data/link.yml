@@ -1,0 +1,24 @@
+- class_name: 小伙伴
+  flink_style: flexcard
+  link_list:
+    - name: 琉璃
+      link: https://www.yeliulee.com
+      avatar: https://yeliulee.com/usr/uploads/logo.png
+      descr: 琉璃君的日常
+      site_shot: /img/siteshot/Snipaste_2022-11-10_23-56-39.png
+    - name: 段乱
+      link: https://blog.zhogjianhao.top
+      avatar: https://cn.gravatar.com/avatar/3b68d6a28eaaa388e70bb37248c897e3?s=256&d=mm
+      descr: 欲穷三千界的博客
+      site_shot: /img/siteshot/Snipaste_2022-11-10_23-59-54.png
+    - name: 雨临Lewis
+      link: https://lewky.cn
+      avatar: https://lewky.cn/images/avatar.jpg
+      descr: 赵子龙一身是胆，程序猿遍体皆肝
+      site_shot: /img/siteshot/Snipaste_2022-11-11_00-00-03.png
+    - name: 米法
+      link: https://miva.work
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=748943649&spec=140
+      descr: 九条米法的个人工作站与常用网站导航
+      site_shot: /img/siteshot/Snipaste_2022-11-11_00-34-28.png
+

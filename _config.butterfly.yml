@@ -2,6 +2,7 @@
 menu:
   首页: / || fas fa-home
   朋友圈:
+    友人帐: /link/ || fas fa-link
     追番: /bangumis/ || fas fa-archive
 
 # Code Blocks (代碼相關)

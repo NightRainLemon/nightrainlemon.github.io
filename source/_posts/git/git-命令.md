@@ -19,3 +19,8 @@ git commit --no-verify -m "提交信息"
 ```git
 git push origin --delete remoteBranchName
 ```
+
+### 克隆分支
+```git
+git clone -b develop giturl
+```

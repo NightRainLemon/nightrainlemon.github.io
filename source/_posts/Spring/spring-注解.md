@@ -34,9 +34,14 @@ public class Config {
     @Qualifier("Compent") // 进一步指明注入 bean 名称为 Compent 的 bean
     private Compent compent;
 
-    @Bean // 类似于 xml 中的 <bean id="newbean" class="com.yylemon.Compent"/>
-    public Compent newbean(){
-        return new Compent();
+    @Bean("dataSource") // 第三方 bean，先创建方法，返回 bean 对象，加上 bean 注解，名字可加可不加
+    public DataSource dataSource(){
+        DruidDataSource ds = new DruidDataSource();
+        ds.setDriverClassName("com.mysql.jdbc.Driver");
+        ds.setUrl("jdbc://mysql://localhost:3306/database");
+        ds.setUsername("root");
+        ds.password("root");
+        return ds;
     }   
 }
 ```
@@ -72,4 +77,63 @@ appletContext.close(); // close 关闭容器
 使用它可以简单类型注入，或者读取配置文件里的值
 ```java
 @Value("${name}")
+```
+
+### @ComponentScan
+配合 @Configuration，注解会告知 Spring 扫描指定的包来初始化 Spring 容器
+
+### @Import
+导入配置类，跟 @ComponentScan 类似，但是它可以精准定位
+```java
+@Import({JdbcConfig.class}) // 数组形式
+```
+
+### @RunWith
+spring 整合 junit
+```java
+//设置类运行器
+@RunWith(SpringJUnit4ClassRunner.class)
+//设置Spring环境对应的配置类
+@ContextConfiguration(classes = SpringConfig.class)
+public class UserServiceTest {
+    @Autowired
+    private UserService userService;
+
+    @Test
+    public void testFindById(){
+        System.out.println(userService.findById(1));
+    }
+}
+```
+
+### @Aspect
+```java
+@Component
+@Aspect
+public class MyAdvice {
+    //切入点表达式：
+//    @Pointcut("execution(void com.itheima.dao.BookDao.update())")
+//    @Pointcut("execution(void com.itheima.dao.impl.BookDaoImpl.update())")
+//    @Pointcut("execution(* com.itheima.dao.impl.BookDaoImpl.update(*))")    //no
+//    @Pointcut("execution(void com.*.*.*.update())")
+//    @Pointcut("execution(* *..*(..))")
+//    @Pointcut("execution(* *..*e(..))")
+//    @Pointcut("execution(void com..*())")
+//    @Pointcut("execution(* com.itheima.*.*Service.find*(..))")
+    //执行com.itheima包下的任意包下的名称以Service结尾的类或接口中的save方法，参数任意，返回值任意
+    @Pointcut("execution(* com.itheima.*.*Service.save(..))")
+    private void pt(){}
+
+    @Before("pt()")
+    public void method(){
+        System.out.println(System.currentTimeMillis());
+    }
+}
+```
+```java
+@Configuration
+@ComponentScan("com.itheima")
+@EnableAspectJAutoProxy // 开启注解 aop
+public class SpringConfig {
+}
 ```

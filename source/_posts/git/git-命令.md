@@ -3,11 +3,10 @@ title: git 命令
 categories: git
 comments: true
 highlight_shrink: false
-abbrlink: fa409c5e
+cover: /img/post/1c81fbb7752647b382f51327fd80f04a.png
+abbrlink: dbab
 date: 2022-11-08 00:00:00
 updated:
-cover: /img/post/1c81fbb7752647b382f51327fd80f04a.png
-
 ---
 
 ## git 命令

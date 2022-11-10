@@ -3,10 +3,10 @@ title: npm 更改镜像源
 categories: npm
 comments: true
 highlight_shrink: false
-abbrlink: fe9d3ff6
+cover: /img/post/64aa2990d4a14c4ca420b3dd4a39a8c8.jpg
+abbrlink: 3d6f
 date: 2022-11-08 00:00:00
 updated:
-cover: /img/post/64aa2990d4a14c4ca420b3dd4a39a8c8.jpg
 ---
 
 ## npm 更改镜像源

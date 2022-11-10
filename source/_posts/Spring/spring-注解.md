@@ -3,10 +3,10 @@ title: spring 注解
 categories: spring
 comments: true
 highlight_shrink: false
-abbrlink: fe9d3ff6
+cover: /img/post/0c0f3f16880511ebb6edd017c2d2eca2.jpg
+abbrlink: cb82
 date: 2022-11-10 00:00:00
 updated:
-cover: /img/post/0c0f3f16880511ebb6edd017c2d2eca2.jpg
 ---
 
 ## spring 注解

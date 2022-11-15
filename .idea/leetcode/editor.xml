@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[485]最大连续 1 的个数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[485]最大连续 1 的个数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn485" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[485]最大连续 1 的个数.java" />
+              <option name="titleSlug" value="max-consecutive-ones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

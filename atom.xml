@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>想要逆袭の柠檬</title>
+  
+  <subtitle>你们都是可爱的人呐</subtitle>
+  <link href="https://blog.yylemon.top/atom.xml" rel="self"/>
+  
+  <link href="https://blog.yylemon.top/"/>
+  <updated>2023-01-09T14:01:17.594Z</updated>
+  <id>https://blog.yylemon.top/</id>
+  
+  <author>
+    <name>柠檬🍋</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【git】.gitignore 文件.md</title>
+    <link href="https://blog.yylemon.top/posts/7733.html"/>
+    <id>https://blog.yylemon.top/posts/7733.html</id>
+    <published>2023-01-09T13:05:00.000Z</published>
+    <updated>2023-01-09T14:01:17.594Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>在项目开发中，我们会把代码提交到 git 仓库中，来进行版本控制，但是代码中时常会存在一些没必要提交的文件或者目录，<br>如：</p><ul><li>node_modules</li><li>*.log</li><li>.idea</li><li>target</li></ul><p>等等，这是我们应该怎么办呢？</p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>.gitignore 文件就是来帮助我们忽略不需要版本控制的文件和目录。</p><h3 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h3><h4 id="注意：匹配模式类似于正则"><a href="#注意：匹配模式类似于正则" class="headerlink" title="注意：匹配模式类似于正则"></a>注意：匹配模式类似于正则</h4><ul><li>空行：不匹配任何文件和目录，用来分隔</li><li>#：注释</li><li>*：匹配任意字符0次或者多次</li><li>?：匹配任意字符1次</li><li>/开头：表示目录</li><li>/结尾：匹配目录以及目录下的内容，不匹配文件</li><li>[]：括号里的字符可以匹配一个对应的字符</li><li>!：不忽略文件或者目录，如果文件的目录已经被忽略则不生效<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#               注释</span><br><span class="line">*.log           忽略所有 .log 结尾的文件</span><br><span class="line">!sql.log        不忽略 sql.log</span><br><span class="line">/.idea          忽略项目根目录下的 .idea 文件，不包括其它目录下的</span><br><span class="line">/.idea/         忽略项目根目录下的 .idea 目录，不包括其它目录下的</span><br><span class="line">/**/log/        忽略项目中所有的 log 目录</span><br><span class="line">/**/target      忽略项目中所有的 target 目录</span><br></pre></td></tr></table></figure></li></ul><h3 id="忽略规则查看"><a href="#忽略规则查看" class="headerlink" title="忽略规则查看"></a>忽略规则查看</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git check-ignore -v a.log</span><br></pre></td></tr></table></figure><h3 id="如何去除已加入版本控制中的文件或目录"><a href="#如何去除已加入版本控制中的文件或目录" class="headerlink" title="如何去除已加入版本控制中的文件或目录"></a>如何去除已加入版本控制中的文件或目录</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除本地缓存</span></span><br><span class="line">git rm -r --cached .</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重新添加</span></span><br><span class="line">git add .</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看状态</span></span><br><span class="line">git status</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;p&gt;在项目开发中，我们会把代码提交到 git 仓库中，来进行版本控制，但是代码中时常会存在一些没必要提交的文件或者目录，&lt;br&gt;如：&lt;/p&gt;
+&lt;</summary>
+      
+    
+    
+    
+    <category term="git" scheme="https://blog.yylemon.top/categories/git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>壁纸资源分享 第一期</title>
+    <link href="https://blog.yylemon.top/posts/467c.html"/>
+    <id>https://blog.yylemon.top/posts/467c.html</id>
+    <published>2023-01-07T10:35:58.323Z</published>
+    <updated>2023-01-07T12:49:33.193Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="极简壁纸"><a href="#极简壁纸" class="headerlink" title="极简壁纸"></a>极简壁纸</h3><p>链接：<a href="https://bz.zzzmh.cn/index">https://bz.zzzmh.cn/index</a></p><h3 id="次元小镇"><a href="#次元小镇" class="headerlink" title="次元小镇"></a>次元小镇</h3><p>链接：<a href="https://dimtown.com/">https://dimtown.com/</a></p><h3 id="彼岸网图"><a href="#彼岸网图" class="headerlink" title="彼岸网图"></a>彼岸网图</h3><p>链接：<a href="https://pic.netbian.com/">https://pic.netbian.com/</a></p><h3 id="Awesome-Wallpapers"><a href="#Awesome-Wallpapers" class="headerlink" title="Awesome Wallpapers"></a>Awesome Wallpapers</h3><p>链接：<a href="https://wallhaven.cc/">https://wallhaven.cc/</a></p><h3 id="Wallpaper-Abyss"><a href="#Wallpaper-Abyss" class="headerlink" title="Wallpaper Abyss"></a>Wallpaper Abyss</h3><p>链接：<a href="https://wall.alphacoders.com/?lang=Chinese">https://wall.alphacoders.com/?lang=Chinese</a></p><h3 id="pixiv"><a href="#pixiv" class="headerlink" title="pixiv"></a>pixiv</h3><p>链接：<a href="https://www.pixiv.net/">https://www.pixiv.net/</a></p><h3 id="Konachan"><a href="#Konachan" class="headerlink" title="Konachan"></a>Konachan</h3><p>链接：<a href="https://konachan.net/post">https://konachan.net/post</a></p><h3 id="images-宇宙-星空"><a href="#images-宇宙-星空" class="headerlink" title="images (宇宙 | 星空)"></a>images (宇宙 | 星空)</h3><p>链接：<a href="https://www.eso.org/public/unitedkingdom/images/">https://www.eso.org/public/unitedkingdom/images/</a></p><h3 id="WallpaperMaiden"><a href="#WallpaperMaiden" class="headerlink" title="WallpaperMaiden"></a>WallpaperMaiden</h3><p>链接：<a href="https://www.wallpapermaiden.com/">https://www.wallpapermaiden.com/</a></p><h3 id="故宫壁纸"><a href="#故宫壁纸" class="headerlink" title="故宫壁纸"></a>故宫壁纸</h3><p>链接：<a href="https://www.dpm.org.cn/lights/royal.html">https://www.dpm.org.cn/lights/royal.html</a></p><h3 id="WallHere"><a href="#WallHere" class="headerlink" title="WallHere"></a>WallHere</h3><p>链接：<a href="https://wallhere.com/">https://wallhere.com/</a></p><h3 id="高分辨率摄影"><a href="#高分辨率摄影" class="headerlink" title="高分辨率摄影"></a>高分辨率摄影</h3><p>链接：<a href="http://highresolution.photography/">http://highresolution.photography/</a></p><h3 id="致美化"><a href="#致美化" class="headerlink" title="致美化"></a>致美化</h3><p>链接：<a href="https://zhutix.com/wallpaper/">https://zhutix.com/wallpaper/</a></p><h3 id="CGWallpapers"><a href="#CGWallpapers" class="headerlink" title="CGWallpapers"></a>CGWallpapers</h3><p>链接：<a href="https://www.cgwallpapers.com/">https://www.cgwallpapers.com/</a></p><h3 id="乌云高清壁纸站"><a href="#乌云高清壁纸站" class="headerlink" title="乌云高清壁纸站"></a>乌云高清壁纸站</h3><p>链接：<a href="https://www.obzhi.com/">https://www.obzhi.com/</a></p><h3 id="Justin-M-Maller-•-艺术总监兼插画师-•-在线作品集"><a href="#Justin-M-Maller-•-艺术总监兼插画师-•-在线作品集" class="headerlink" title="Justin M. Maller • 艺术总监兼插画师 • 在线作品集"></a>Justin M. Maller • 艺术总监兼插画师 • 在线作品集</h3><p>链接：<a href="http://justinmaller.com/">http://justinmaller.com/</a></p><h3 id="必应每日高清壁纸"><a href="#必应每日高清壁纸" class="headerlink" title="必应每日高清壁纸"></a>必应每日高清壁纸</h3><p>链接：<a href="https://bing.ioliu.cn/">https://bing.ioliu.cn/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;极简壁纸&quot;&gt;&lt;a href=&quot;#极简壁纸&quot; class=&quot;headerlink&quot; title=&quot;极简壁纸&quot;&gt;&lt;/a&gt;极简壁纸&lt;/h3&gt;&lt;p&gt;链接：&lt;a href=&quot;https://bz.zzzmh.cn/index&quot;&gt;https://bz.zzzmh.cn/ind</summary>
+      
+    
+    
+    
+    <category term="资源分享" scheme="https://blog.yylemon.top/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自己常用的 Windows 软件分享</title>
+    <link href="https://blog.yylemon.top/posts/fc5e.html"/>
+    <id>https://blog.yylemon.top/posts/fc5e.html</id>
+    <published>2023-01-02T10:26:00.000Z</published>
+    <updated>2023-01-04T11:48:16.617Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="自己常用的-Windows-软件分享"><a href="#自己常用的-Windows-软件分享" class="headerlink" title="自己常用的 Windows 软件分享"></a>自己常用的 Windows 软件分享</h2><h3 id="百度网盘"><a href="#百度网盘" class="headerlink" title="百度网盘"></a>百度网盘</h3><p>链接：<a href="https://pan.baidu.com/s/1MjKgh2y4wR0TX0ZiC80Y9g">https://pan.baidu.com/s/1MjKgh2y4wR0TX0ZiC80Y9g</a><br>提取码：2nmd</p><h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3><p>Clash</p><h3 id="截图软件"><a href="#截图软件" class="headerlink" title="截图软件"></a>截图软件</h3><p>Snipaste<br>链接：<a href="https://www.snipaste.com/download.html">https://www.snipaste.com/download.html</a></p><h3 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h3><p>Foxmail<br>链接：<a href="https://www.foxmail.com/">https://www.foxmail.com/</a></p><h3 id="压缩软件"><a href="#压缩软件" class="headerlink" title="压缩软件"></a>压缩软件</h3><p>360压缩<br>链接：<a href="https://yasuo.360.cn/">https://yasuo.360.cn/</a></p><h3 id="办公软件"><a href="#办公软件" class="headerlink" title="办公软件"></a>办公软件</h3><p>腾讯文档<br>WPS Office<br>链接：<a href="https://platform.wps.cn/">https://platform.wps.cn/</a></p><h3 id="录屏直播"><a href="#录屏直播" class="headerlink" title="录屏直播"></a>录屏直播</h3><p>OBS Studio<br>链接：<a href="https://obsproject.com/">https://obsproject.com/</a></p><h3 id="苹果虚拟定位、导出文件等"><a href="#苹果虚拟定位、导出文件等" class="headerlink" title="苹果虚拟定位、导出文件等"></a>苹果虚拟定位、导出文件等</h3><p>爱思助手<br>链接：<a href="https://www.i4.cn/">https://www.i4.cn/</a></p><h3 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h3><p>PotPlayer</p><h3 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h3><p>文件蜈蚣<br>链接：<a href="http://www.filecxx.com/zh_CN/index.html">http://www.filecxx.com/zh_CN/index.html</a><br>迅雷<br>链接：<a href="https://www.xunlei.com/">https://www.xunlei.com/</a></p><h3 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h3><p>IObitUninstaller</p><h3 id="文件搜索"><a href="#文件搜索" class="headerlink" title="文件搜索"></a>文件搜索</h3><p>Everything<br>链接：<a href="https://www.voidtools.com/zh-cn/downloads/">https://www.voidtools.com/zh-cn/downloads/</a></p><h3 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h3><p>sublime<br>链接：<a href="http://www.sublimetext.com/">http://www.sublimetext.com/</a><br>VSCode<br>链接：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p>Edge<br>Chrome</p><h3 id="剪辑软件"><a href="#剪辑软件" class="headerlink" title="剪辑软件"></a>剪辑软件</h3><p>剪映<br>链接：<a href="https://www.capcut.cn/">https://www.capcut.cn/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;自己常用的-Windows-软件分享&quot;&gt;&lt;a href=&quot;#自己常用的-Windows-软件分享&quot; class=&quot;headerlink&quot; title=&quot;自己常用的 Windows 软件分享&quot;&gt;&lt;/a&gt;自己常用的 Windows 软件分享&lt;/h2&gt;&lt;h3 id=&quot;百</summary>
+      
+    
+    
+    
+    <category term="软件分享" scheme="https://blog.yylemon.top/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>windows cmd</title>
+    <link href="https://blog.yylemon.top/posts/72c6.html"/>
+    <id>https://blog.yylemon.top/posts/72c6.html</id>
+    <published>2022-11-14T16:00:00.000Z</published>
+    <updated>2022-11-15T02:43:55.668Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="windows-cmd"><a href="#windows-cmd" class="headerlink" title="windows cmd"></a>windows cmd</h2><h3 id="查找端口号对应的-pid"><a href="#查找端口号对应的-pid" class="headerlink" title="查找端口号对应的 pid"></a>查找端口号对应的 pid</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat <span class="number">4444</span></span><br></pre></td></tr></table></figure><h3 id="杀掉-pid-对应的任务"><a href="#杀掉-pid-对应的任务" class="headerlink" title="杀掉 pid 对应的任务"></a>杀掉 pid 对应的任务</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">taskkill</span> /pid <span class="number">171896</span> /f</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;windows-cmd&quot;&gt;&lt;a href=&quot;#windows-cmd&quot; class=&quot;headerlink&quot; title=&quot;windows cmd&quot;&gt;&lt;/a&gt;windows cmd&lt;/h2&gt;&lt;h3 id=&quot;查找端口号对应的-pid&quot;&gt;&lt;a href=&quot;#查找端口号</summary>
+      
+    
+    
+    
+    <category term="windows" scheme="https://blog.yylemon.top/categories/windows/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>spring 注解</title>
+    <link href="https://blog.yylemon.top/posts/cb82.html"/>
+    <id>https://blog.yylemon.top/posts/cb82.html</id>
+    <published>2022-11-09T16:00:00.000Z</published>
+    <updated>2022-11-10T15:11:12.879Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="spring-注解"><a href="#spring-注解" class="headerlink" title="spring 注解"></a>spring 注解</h2><h3 id="Controller"><a href="#Controller" class="headerlink" title="@Controller"></a>@Controller</h3><p>用于标注控制层组件</p><h3 id="Service"><a href="#Service" class="headerlink" title="@Service"></a>@Service</h3><p>用于标注业务层组件</p><h3 id="Repository"><a href="#Repository" class="headerlink" title="@Repository"></a>@Repository</h3><p>用于标注数据访问组件，即 DAO 组件</p><h3 id="Component"><a href="#Component" class="headerlink" title="@Component"></a>@Component</h3><p>泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注</p><h3 id="Configuration"><a href="#Configuration" class="headerlink" title="@Configuration"></a>@Configuration</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration(&quot;name&quot;)</span> <span class="comment">// 表示这是一个配置信息类，可以给这个配置类也起一个名称</span></span><br><span class="line"><span class="meta">@ComponentScan(&quot;com.yylemon&quot;)</span> <span class="comment">// 类似于 xml 中的 &lt;context:component-scan base-package=&quot;com.yylemon&quot;/&gt;</span></span><br><span class="line"><span class="meta">@PropertySource(&quot;classpath:jdbc.properties&quot;)</span> <span class="comment">// 加载 properties 文件，多文件要用数组格式，不允许使用通配符 *</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Config</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span> <span class="comment">// 自动注入，如果容器中有多个符合的 bean 时，需要进一步明确</span></span><br><span class="line">    <span class="meta">@Qualifier(&quot;Compent&quot;)</span> <span class="comment">// 进一步指明注入 bean 名称为 Compent 的 bean</span></span><br><span class="line">    <span class="keyword">private</span> Compent compent;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean(&quot;dataSource&quot;)</span> <span class="comment">// 第三方 bean，先创建方法，返回 bean 对象，加上 bean 注解，名字可加可不加</span></span><br><span class="line">    <span class="keyword">public</span> DataSource <span class="title function_">dataSource</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="type">DruidDataSource</span> <span class="variable">ds</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">DruidDataSource</span>();</span><br><span class="line">        ds.setDriverClassName(<span class="string">&quot;com.mysql.jdbc.Driver&quot;</span>);</span><br><span class="line">        ds.setUrl(<span class="string">&quot;jdbc://mysql://localhost:3306/database&quot;</span>);</span><br><span class="line">        ds.setUsername(<span class="string">&quot;root&quot;</span>);</span><br><span class="line">        ds.password(<span class="string">&quot;root&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> ds;</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="Scope"><a href="#Scope" class="headerlink" title="@Scope"></a>@Scope</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Scope</span> <span class="comment">// 单例</span></span><br><span class="line"><span class="meta">@Scope(&quot;singleton&quot;)</span> <span class="comment">// 单例</span></span><br><span class="line"><span class="meta">@Scope(&quot;prototype&quot;)</span> <span class="comment">// 多例</span></span><br></pre></td></tr></table></figure><h3 id="PostConstruct"><a href="#PostConstruct" class="headerlink" title="@PostConstruct"></a>@PostConstruct</h3><p>生命周期，构造方法后执行</p><h3 id="PreDestroy"><a href="#PreDestroy" class="headerlink" title="@PreDestroy"></a>@PreDestroy</h3><p>生命周期，彻底销毁前执行<br>销毁需要关闭容器或者注册钩子关闭<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// appletContext 需要使用父类</span></span><br><span class="line">appletContext.registerShutdownHook(); <span class="comment">// 注册钩子关闭</span></span><br><span class="line">appletContext.close(); <span class="comment">// close 关闭容器</span></span><br></pre></td></tr></table></figure></p><h3 id="Autowired"><a href="#Autowired" class="headerlink" title="@Autowired"></a>@Autowired</h3><p>在默认情况下使用 @Autowired 注释进行自动注入时，Spring 容器中匹配的候选 Bean 数目必须有且仅有一个。<br>当找不到一个匹配的 Bean 时，Spring 容器将抛出 BeanCreationException 异常，并指出必须至少拥有一个匹配的 Bean。<br>当不能确定 Spring 容器中一定拥有某个类的 Bean 时，可以在需要自动注入该类 Bean 的地方可以使用 @Autowired(required = false)，这等于告诉 Spring: 在找不到匹配 Bean 时也不报错。</p><h3 id="Qualifier"><a href="#Qualifier" class="headerlink" title="@Qualifier"></a>@Qualifier</h3><p>配合 @Autowired 使用，当出现多个相同类型时，它可以缩小范围，指定注入对象的 id。</p><h3 id="Value"><a href="#Value" class="headerlink" title="@Value"></a>@Value</h3><p>使用它可以简单类型注入，或者读取配置文件里的值<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Value(&quot;$&#123;name&#125;&quot;)</span></span><br></pre></td></tr></table></figure></p><h3 id="ComponentScan"><a href="#ComponentScan" class="headerlink" title="@ComponentScan"></a>@ComponentScan</h3><p>配合 @Configuration，注解会告知 Spring 扫描指定的包来初始化 Spring 容器</p><h3 id="Import"><a href="#Import" class="headerlink" title="@Import"></a>@Import</h3><p>导入配置类，跟 @ComponentScan 类似，但是它可以精准定位<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Import(&#123;JdbcConfig.class&#125;)</span> <span class="comment">// 数组形式</span></span><br></pre></td></tr></table></figure></p><h3 id="RunWith"><a href="#RunWith" class="headerlink" title="@RunWith"></a>@RunWith</h3><p>spring 整合 junit<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置类运行器</span></span><br><span class="line"><span class="meta">@RunWith(SpringJUnit4ClassRunner.class)</span></span><br><span class="line"><span class="comment">//设置Spring环境对应的配置类</span></span><br><span class="line"><span class="meta">@ContextConfiguration(classes = SpringConfig.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserServiceTest</span> &#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> UserService userService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testFindById</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(userService.findById(<span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="Aspect"><a href="#Aspect" class="headerlink" title="@Aspect"></a>@Aspect</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Aspect</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyAdvice</span> &#123;</span><br><span class="line">    <span class="comment">//切入点表达式：</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(void com.itheima.dao.BookDao.update())&quot;)</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(void com.itheima.dao.impl.BookDaoImpl.update())&quot;)</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(* com.itheima.dao.impl.BookDaoImpl.update(*))&quot;)    //no</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(void com.*.*.*.update())&quot;)</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(* *..*(..))&quot;)</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(* *..*e(..))&quot;)</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(void com..*())&quot;)</span></span><br><span class="line"><span class="comment">//    @Pointcut(&quot;execution(* com.itheima.*.*Service.find*(..))&quot;)</span></span><br><span class="line">    <span class="comment">//执行com.itheima包下的任意包下的名称以Service结尾的类或接口中的save方法，参数任意，返回值任意</span></span><br><span class="line">    <span class="meta">@Pointcut(&quot;execution(* com.itheima.*.*Service.save(..))&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">pt</span><span class="params">()</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Before(&quot;pt()&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(System.currentTimeMillis());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@ComponentScan(&quot;com.itheima&quot;)</span></span><br><span class="line"><span class="meta">@EnableAspectJAutoProxy</span> <span class="comment">// 开启注解 aop</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SpringConfig</span> &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;spring-注解&quot;&gt;&lt;a href=&quot;#spring-注解&quot; class=&quot;headerlink&quot; title=&quot;spring 注解&quot;&gt;&lt;/a&gt;spring 注解&lt;/h2&gt;&lt;h3 id=&quot;Controller&quot;&gt;&lt;a href=&quot;#Controller&quot; cla</summary>
+      
+    
+    
+    
+    <category term="spring" scheme="https://blog.yylemon.top/categories/spring/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>npm 更改镜像源</title>
+    <link href="https://blog.yylemon.top/posts/3d6f.html"/>
+    <id>https://blog.yylemon.top/posts/3d6f.html</id>
+    <published>2022-11-07T16:00:00.000Z</published>
+    <updated>2022-11-10T15:11:12.881Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="npm-更改镜像源"><a href="#npm-更改镜像源" class="headerlink" title="npm 更改镜像源"></a>npm 更改镜像源</h2><h3 id="查看当前的下载源"><a href="#查看当前的下载源" class="headerlink" title="查看当前的下载源"></a>查看当前的下载源</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure><h3 id="更改镜像源"><a href="#更改镜像源" class="headerlink" title="更改镜像源"></a>更改镜像源</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 淘宝镜像源</span><br><span class="line">npm config set registry https://registry.npmmirror.com/</span><br></pre></td></tr></table></figure><h3 id="镜像源"><a href="#镜像源" class="headerlink" title="镜像源"></a>镜像源</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 淘宝镜像源</span><br><span class="line">registry=https://registry.npmmirror.com/</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;npm-更改镜像源&quot;&gt;&lt;a href=&quot;#npm-更改镜像源&quot; class=&quot;headerlink&quot; title=&quot;npm 更改镜像源&quot;&gt;&lt;/a&gt;npm 更改镜像源&lt;/h2&gt;&lt;h3 id=&quot;查看当前的下载源&quot;&gt;&lt;a href=&quot;#查看当前的下载源&quot; class=&quot;</summary>
+      
+    
+    
+    
+    <category term="npm" scheme="https://blog.yylemon.top/categories/npm/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git 命令</title>
+    <link href="https://blog.yylemon.top/posts/dbab.html"/>
+    <id>https://blog.yylemon.top/posts/dbab.html</id>
+    <published>2022-11-07T16:00:00.000Z</published>
+    <updated>2022-11-11T16:16:03.426Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="git-命令"><a href="#git-命令" class="headerlink" title="git 命令"></a>git 命令</h2><h3 id="忽略校验提交"><a href="#忽略校验提交" class="headerlink" title="忽略校验提交"></a>忽略校验提交</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --no-verify -m &quot;提交信息&quot;</span><br></pre></td></tr></table></figure><h3 id="删除远程仓库分支"><a href="#删除远程仓库分支" class="headerlink" title="删除远程仓库分支"></a>删除远程仓库分支</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete remoteBranchName</span><br></pre></td></tr></table></figure><h3 id="克隆分支"><a href="#克隆分支" class="headerlink" title="克隆分支"></a>克隆分支</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone -b develop giturl</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;git-命令&quot;&gt;&lt;a href=&quot;#git-命令&quot; class=&quot;headerlink&quot; title=&quot;git 命令&quot;&gt;&lt;/a&gt;git 命令&lt;/h2&gt;&lt;h3 id=&quot;忽略校验提交&quot;&gt;&lt;a href=&quot;#忽略校验提交&quot; class=&quot;headerlink&quot; titl</summary>
+      
+    
+    
+    
+    <category term="git" scheme="https://blog.yylemon.top/categories/git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mysql 8.0.31 安装配置全过程</title>
+    <link href="https://blog.yylemon.top/posts/fe9d3ff6.html"/>
+    <id>https://blog.yylemon.top/posts/fe9d3ff6.html</id>
+    <published>2022-11-06T16:00:00.000Z</published>
+    <updated>2022-11-09T04:09:57.440Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="mysql-8-0-31-安装配置全过程"><a href="#mysql-8-0-31-安装配置全过程" class="headerlink" title="mysql 8.0.31 安装配置全过程"></a>mysql 8.0.31 安装配置全过程</h2><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h3><p><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Downloads</a><br>下载需要用 Oracle 账号登录，百度自行搜索。</p><p>最好下载压缩包，方便管理和配置。</p><h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2. 配置"></a>2. 配置</h3><h4 id="2-1-解压"><a href="#2-1-解压" class="headerlink" title="2.1 解压"></a>2.1 解压</h4><h4 id="2-2-初始化"><a href="#2-2-初始化" class="headerlink" title="2.2 初始化"></a>2.2 初始化</h4><p>进入 bin 目录，在当前目录下 cmd，输入<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></table></figure><br>记住当前的密码（MqGsepr&amp;S0&amp;e）！<br><img src="/img/mysql/mysql-安装配置/init.png" alt="init"></p><h4 id="2-3-安装-mysql-服务"><a href="#2-3-安装-mysql-服务" class="headerlink" title="2.3 安装 mysql 服务"></a>2.3 安装 mysql 服务</h4><p>用管理员身份启动 cmd，进入 bin 目录，输入<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld -install</span><br></pre></td></tr></table></figure><br><img src="/img/mysql/mysql-安装配置/installServer.png" alt="installServer"><br>可以看到已经有了 mysql 服务了。<br><img src="/img/mysql/mysql-安装配置/mysqlServer.png" alt="mysqlServer"></p><h4 id="2-4-启动和关闭服务"><a href="#2-4-启动和关闭服务" class="headerlink" title="2.4 启动和关闭服务"></a>2.4 启动和关闭服务</h4><p>启动和关闭服务一种是在 Windows 服务中手动开启和关闭，另一种是用命令来启动和关闭。<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> stop mysql</span><br><span class="line"><span class="built_in">net</span> <span class="built_in">start</span> mysql</span><br></pre></td></tr></table></figure><br><img src="/img/mysql/mysql-安装配置/startService.png" alt="startService"></p><h4 id="3-5-修改密码"><a href="#3-5-修改密码" class="headerlink" title="3.5 修改密码"></a>3.5 修改密码</h4><p>输入<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br><span class="line">// 之前初始化的密码</span><br><span class="line">alter user &#x27;root&#x27;@&#x27;localhost&#x27; identified by &#x27;密码&#x27;;</span><br><span class="line">commit;</span><br></pre></td></tr></table></figure><br><img src="/img/mysql/mysql-安装配置/alterPassword.png" alt="alterPassword">       </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;mysql-8-0-31-安装配置全过程&quot;&gt;&lt;a href=&quot;#mysql-8-0-31-安装配置全过程&quot; class=&quot;headerlink&quot; title=&quot;mysql 8.0.31 安装配置全过程&quot;&gt;&lt;/a&gt;mysql 8.0.31 安装配置全过程&lt;/h2&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="mysql" scheme="https://blog.yylemon.top/categories/mysql/"/>
+    
+    
+  </entry>
+  
+</feed>
